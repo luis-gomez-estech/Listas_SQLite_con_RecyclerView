@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -15,10 +14,8 @@
             android:padding="5dp"
             >
 
-
-
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/Titulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -26,11 +23,43 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
-                    android:layout_marginBottom="40dp"
-                    android:text="Listado de sitios"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/listado_de_sitios"
                     android:textSize="24sp"
                     android:layout_gravity="center"
                     />
+
+            <TextView
+                android:id="@+id/leyenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/para_borrar_solo_un_item_pulsaci_n_larga_encima_del_item"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/leyenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/para_editar_un_item_pulsaci_n_corta_encima_del_item"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,7 +74,7 @@
 
                     android:layout_weight="1"
                     android:background="@drawable/botones"
-                    android:text="Agregar Usuario"
+                    android:text="@string/agregar_usuario"
                     android:textColor="#ffffff"
                     android:textSize="15sp"
                     android:layout_gravity="center"/>
@@ -65,8 +94,7 @@
             </LinearLayout>
 
 
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintEnd_toEndOf="parent"

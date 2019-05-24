@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Listas_SQLite_con_RecyclerView</string>
+    <string name="listado_de_sitios">Listado de sitios</string>
+    <string name="para_borrar_solo_un_item_pulsaci_n_larga_encima_del_item">Para borrar solo un item, pulsación larga encima del item</string>
+    <string name="para_editar_un_item_pulsaci_n_corta_encima_del_item">Para editar un item, pulsación corta encima del item</string>
+    <string name="agregar_usuario">Agregar Usuario</string>
 </resources>
