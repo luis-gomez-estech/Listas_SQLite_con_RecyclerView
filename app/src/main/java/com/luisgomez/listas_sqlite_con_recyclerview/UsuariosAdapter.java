@@ -35,8 +35,10 @@ public class UsuariosAdapter extends RecyclerView.Adapter<UsuariosAdapter.MyView
         Usuario usuario = listaDeUsuarios.get(i);
 
         // Obtener los datos de la lista
-        String nombreUsuario_B = usuario.getNombreUsuario_C();
-        int edadUsuario_B = usuario.getEdadUsuario_C();
+
+        String nombreUsuario_B = usuario.getRvNombreUsuario();
+        int edadUsuario_B = usuario.getRvEdadUsuario();
+
         // Y poner a los TextView los datos con setText
         myViewHolder.nombre.setText(nombreUsuario_B);
         myViewHolder.edad.setText(String.valueOf(edadUsuario_B));

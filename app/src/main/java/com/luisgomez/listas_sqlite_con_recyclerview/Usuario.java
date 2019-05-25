@@ -2,20 +2,20 @@ package com.luisgomez.listas_sqlite_con_recyclerview;
 
 public class Usuario {
 
-    private String nombreUsuario_C;
-    private int edadUsuario_C;
+    private String rvNombreUsuario;
+    private int rvEdadUsuario;
 
     private long id; // El ID de la BD
 
     public Usuario(String nombre, int edad) {
-        this.nombreUsuario_C = nombre;
-        this.edadUsuario_C = edad;
+        this.rvNombreUsuario = nombre;
+        this.rvEdadUsuario = edad;
     }
 
     // Constructor para cuando instanciamos desde la BD
     public Usuario(String nombre, int edad, long id) {
-        this.nombreUsuario_C = nombre;
-        this.edadUsuario_C = edad;
+        this.rvNombreUsuario = nombre;
+        this.rvEdadUsuario = edad;
         this.id = id;
     }
 
@@ -27,27 +27,27 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getNombreUsuario_C() {
-        return nombreUsuario_C;
+    public String getRvNombreUsuario() {
+        return rvNombreUsuario;
     }
 
-    public void setNombreUsuario_C(String nombreUsuario_C) {
-        this.nombreUsuario_C = nombreUsuario_C;
+    public void setRvNombreUsuario(String rvNombreUsuario) {
+        this.rvNombreUsuario = rvNombreUsuario;
     }
 
-    public int getEdadUsuario_C() {
-        return edadUsuario_C;
+    public int getRvEdadUsuario() {
+        return rvEdadUsuario;
     }
 
-    public void setEdadUsuario_C(int edadUsuario_C) {
-        this.edadUsuario_C = edadUsuario_C;
+    public void setRvEdadUsuario(int rvEdadUsuario) {
+        this.rvEdadUsuario = rvEdadUsuario;
     }
 
     @Override
     public String toString() {
         return "Usuario{" +
-                "nombreUsuario_C='" + nombreUsuario_C + '\'' +
-                ", edad=" + edadUsuario_C +
+                "rvNombreUsuario='" + rvNombreUsuario + '\'' +
+                ", edad=" + rvEdadUsuario +
                 '}';
     }
 }

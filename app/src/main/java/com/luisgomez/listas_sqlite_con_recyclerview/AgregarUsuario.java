@@ -19,8 +19,8 @@ public class AgregarUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_agregar_usuario);
 
 
-        etNombre = findViewById(R.id.nombreSitio_A);
-        etEdad = findViewById(R.id.nombreCiudad_A);
+        etNombre = findViewById(R.id.agregarNombreSitio);
+        etEdad = findViewById(R.id.nagregarNombreCiudad);
         btnAgregarUsuario = findViewById(R.id.btnAgregarSitio);
         btnCancelarNuevoUsuario = findViewById(R.id.btnCancelarNuevoSitio);
 

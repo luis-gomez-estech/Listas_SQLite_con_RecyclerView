@@ -5,8 +5,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,16 +32,16 @@ public class MetodosParaOperarBotones {
         // wInsertamos
         SQLiteDatabase baseDeDatos = ayudanteBaseDeDatos.getWritableDatabase();
         ContentValues valoresParaInsertar = new ContentValues();
-        valoresParaInsertar.put("nombre", usuario.getNombreUsuario_C());
-        valoresParaInsertar.put("edad", usuario.getEdadUsuario_C());
+        valoresParaInsertar.put("nombre", usuario.getRvNombreUsuario());
+        valoresParaInsertar.put("edad", usuario.getRvEdadUsuario());
         return baseDeDatos.insert(NOMBRE_TABLA, null, valoresParaInsertar);
     }
 
     public int guardarCambios(Usuario usuarioEditado) {
         SQLiteDatabase baseDeDatos = ayudanteBaseDeDatos.getWritableDatabase();
         ContentValues valoresParaActualizar = new ContentValues();
-        valoresParaActualizar.put("nombre", usuarioEditado.getNombreUsuario_C());
-        valoresParaActualizar.put("edad", usuarioEditado.getEdadUsuario_C());
+        valoresParaActualizar.put("nombre", usuarioEditado.getRvNombreUsuario());
+        valoresParaActualizar.put("edad", usuarioEditado.getRvEdadUsuario());
 
         String campoParaActualizar = "id = ?";
 

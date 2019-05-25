@@ -49,8 +49,8 @@ public class EditarUsuario extends AppCompatActivity {
 
         // Aqui se Rellenan los EditText con los datos de la usuario
 
-        etEditarEdad.setText(String.valueOf(usuario.getEdadUsuario_C()));
-        etEditarNombre.setText(usuario.getNombreUsuario_C());
+        etEditarEdad.setText(String.valueOf(usuario.getRvEdadUsuario()));
+        etEditarNombre.setText(usuario.getRvNombreUsuario());
 
         // Boton Cancelar, que cierra la actividad
         btnCancelarEdicion.setOnClickListener(new View.OnClickListener() {

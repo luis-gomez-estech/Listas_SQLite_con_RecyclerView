@@ -23,7 +23,7 @@
         />
 
     <EditText
-        android:id="@+id/nombreSitio_A"
+        android:id="@+id/agregarNombreSitio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -35,7 +35,7 @@
      />
 
     <EditText
-        android:id="@+id/nombreCiudad_A"
+        android:id="@+id/nagregarNombreCiudad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

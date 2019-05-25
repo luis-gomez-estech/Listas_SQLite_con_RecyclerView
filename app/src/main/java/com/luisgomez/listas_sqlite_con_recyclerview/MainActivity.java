@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity  {
                 Usuario usuarioSeleccionado = listaDeUsuarios.get(position);
                 Intent intent = new Intent(MainActivity.this, EditarUsuario.class);
                 intent.putExtra("idUsuario", usuarioSeleccionado.getId());
-                intent.putExtra("nombreUsuario", usuarioSeleccionado.getNombreUsuario_C());
-                intent.putExtra("edadUsuario", usuarioSeleccionado.getEdadUsuario_C());
+                intent.putExtra("nombreUsuario", usuarioSeleccionado.getRvNombreUsuario());
+                intent.putExtra("edadUsuario", usuarioSeleccionado.getRvEdadUsuario());
                 startActivity(intent);
             }
 
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity  {
                             }
                         })
                         .setTitle("Confirmar")
-                        .setMessage("¿Eliminar el usuario " + usuarioParaEliminar.getNombreUsuario_C() + "?")
+                        .setMessage("¿Eliminar el usuario " + usuarioParaEliminar.getRvNombreUsuario() + "?")
                         .create();
                 dialog.show();
 
